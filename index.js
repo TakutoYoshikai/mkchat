@@ -15,12 +15,21 @@ function yourMessage(text) {
   </div>`
 }
 
-function image(src) {
+function yourImage(src) {
   return `<div class="message">
     <img src="${yourIcon}" class="message-icon">
     <div class="message-text">
       <img class="message-image" src="${src}">
     </div>
+  </div>`
+}
+
+function myImage(src) {
+  return `<div class="my-message">
+    <div class="message-text">
+      <img class="message-image" src="${src}">
+    </div>
+    <img src="${myIcon}" class="message-icon">
   </div>`
 }
 function title(text) {
@@ -40,7 +49,9 @@ function chat(messages) {
     } else if (b.type === "t") {
       return a + title(b.text);
     } else if (b.type === "i") {
-      return a + image(b.text);
+      return a + myImage(b.text);
+    } else if (b.type === "j") {
+      return a + yourImage(b.text);
     }
   }, "")
 }

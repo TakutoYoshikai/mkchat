@@ -1,5 +1,7 @@
 # chat-profile
 チャットUIを使った自己紹介サイト作成Kit
+![Takuto Yoshikai's Profile](https://github.com/TakutoYoshikai/chat-profile/cover.png)
+
 
 ### 使い方
 1. index.jsを編集して、myIconに自分側のアイコンのパス、yourIconに相手側のアイコンのパスを設定する。

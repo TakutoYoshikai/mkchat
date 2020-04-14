@@ -62,7 +62,7 @@ function csvToChat(csv) {
 function getChatTexts() {
   return new Promise(function(resolve, reject) {
     var req = new XMLHttpRequest();
-    req.open("GET", "interview.csv", true);
+    req.open("GET", "chat.csv", true);
     req.send(null);
     req.onload = function() {
       var text = req.responseText;

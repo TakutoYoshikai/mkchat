@@ -1,6 +1,7 @@
 # chat-profile
 チャットUIを使った自己紹介サイト作成Kit
-![Takuto Yoshikai's Profile](https://github.com/TakutoYoshikai/chat-profile/cover.png)
+
+![Takuto Yoshikai's Profile](https://github.com/TakutoYoshikai/chat-profile/blob/master/cover.png)
 
 
 ### 使い方

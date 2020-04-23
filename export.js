@@ -1,5 +1,5 @@
 const myIcon = "images/takuto-meshi.png";
-const yourIcon = "images/hota.jpg";
+const yourIcon = "images/yuta.jpg";
 
 function myMessage(text) {
   return `<div class="my-message">

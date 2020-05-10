@@ -8,6 +8,7 @@ https://yoshikai.net/interview.html
 
 
 ### 使い方
+#### 自動生成
 1. index.jsを編集して、myIconに自分側のアイコンのパス、yourIconに相手側のアイコンのパスを設定する。
 
 2. chat.csvを編集して、以下の記法に従って表示させるメッセージを追加する
@@ -17,6 +18,19 @@ https://yoshikai.net/interview.html
 * メッセージのタイトルをつける時は最初にtをつける
 * 自分のメッセージとして画像を表示させる時は最初にiをつける
 * 相手のメッセージとして画像を表示させる時は最初にjをつける
+
+#### htmlタグ書き出し
+1. export.jsを編集して、myIconに自分側のアイコンのパス、yourIconに相手側のアイコンのパスを設定する。
+
+2. chat.csvを編集して、以下の記法に従って表示させるメッセージを追加する
+
+3. node.jsでexport.jsを実行
+```
+node export.js
+```
+4. コピーしてindex.htmlに貼り付け
+
+5. index.jsの読み込みタグを削除
 
 ### LICENSE
 MIT

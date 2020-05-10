@@ -78,5 +78,8 @@ function getChatTexts() {
 }
 
 getChatTexts().then(function(text) {
-  console.log(chat(csvToChat(text)))
+  const html = chat(csvToChat(text))
+  let proc = require("child_process").spawn("pbcopy")
+  proc.stdin.write(html)
+  proc.stdin.end()
 })

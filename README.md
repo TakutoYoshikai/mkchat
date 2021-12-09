@@ -28,6 +28,9 @@ iimages/yuta.jpg
 jimages/takuto-meshi.png
 ```
 
+**Exports**
+<img src="./result.png" width="300">
+
 #### htmlタグ書き出し
 1. export.jsを編集して、myIconに自分側のアイコンのパス、yourIconに相手側のアイコンのパスを設定する。
 

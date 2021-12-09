@@ -39,7 +39,7 @@ jimages/takuto-meshi.png
 
 3. `node export.js`
 
-4. Paste
+4. Paste html tags to index.html
 
 5. Comment out this line in index.js
 ```javascript

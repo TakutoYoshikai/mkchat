@@ -72,7 +72,7 @@ function csvToChat(csv) {
 
 function getChatTexts() {
   const fs = require("fs")
-  return fs.readFileSync("chat.csv", "utf-8");
+  return fs.readFileSync("chat.txt", "utf-8");
 }
 
 const text = getChatTexts();

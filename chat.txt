@@ -1,4 +1,4 @@
-t自己紹介
+tSelf Introduction
 mHello!
 yHey!
 iimages/yuta.jpg

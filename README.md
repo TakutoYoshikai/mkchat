@@ -28,7 +28,7 @@ iimages/yuta.jpg
 jimages/takuto-meshi.png
 ```
 
-**Exports**
+**Result of the Example**
 
 <img src="./result.png" width="300">
 

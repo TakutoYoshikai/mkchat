@@ -56,7 +56,7 @@ function chat(messages) {
   }, "")
 }
 
-function csvToChat(csv) {
+function chatToHtml(csv) {
   return csv.split("\n").map(function(msg) {
     if (msg === "") {
       return null;
@@ -76,7 +76,7 @@ function getChatTexts() {
 }
 
 const text = getChatTexts();
-const html = chat(csvToChat(text))
+const html = chat(chatToHtml(text))
 let proc = require("child_process").spawn("pbcopy")
 proc.stdin.write(html)
 proc.stdin.end()

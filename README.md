@@ -32,18 +32,21 @@ jimages/takuto-meshi.png
 
 <img src="./result.png" width="300">
 
-#### htmlタグ書き出し
-1. export.jsを編集して、myIconに自分側のアイコンのパス、yourIconに相手側のアイコンのパスを設定する。
+#### Export HTML tags
+1. Change myIcon and yourIcon in export.js
 
-2. chat.csvを編集して、以下の記法に従って表示させるメッセージを追加する
+2. Rewrite chat.txt
 
-3. node.jsでexport.jsを実行
+3. `node export.js`
+
+4. Paste
+
+5. Comment out this line in index.js
+```javascript
+getChatTexts().then(function(text) {
+  //document.getElementById("chat").innerHTML = chat(csvToChat(text))
+})
 ```
-node export.js
-```
-4. コピーしてindex.htmlに貼り付け
-
-5. index.jsの読み込みタグを削除
 
 ### LICENSE
 MIT

@@ -72,14 +72,13 @@ function csvToChat(csv) {
 
 function getChatTexts() {
   const fs = require("fs")
-  return new Promise(function(resolve, reject) {
-    resolve(fs.readFileSync("chat.csv", "utf-8"))
-  })
+  return fs.readFileSync("chat.csv", "utf-8");
 }
 
-getChatTexts().then(function(text) {
-  const html = chat(csvToChat(text))
-  let proc = require("child_process").spawn("pbcopy")
-  proc.stdin.write(html)
-  proc.stdin.end()
-})
+const text = getChatTexts();
+const html = chat(csvToChat(text))
+let proc = require("child_process").spawn("pbcopy")
+proc.stdin.write(html)
+proc.stdin.end()
+console.log("Copied html!");
+process.exit(0);

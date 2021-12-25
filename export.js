@@ -62,10 +62,10 @@ function chat(messages) {
       return a + myImage(b.text);
     } else if (b.type === "j") {
       return a + yourImage(b.text);
-    } else if (b.type === "x") {
+    } else if (b.type === "n") {
       myIcon = b.text;
       return a;
-    } else if (b.type === "y") {
+    } else if (b.type === "l") {
       yourIcon = b.text;
       return a;
     }

@@ -19,7 +19,7 @@ https://yoshikai.net/interview.html
 
 `yHey` -> Other person says Hey
 
-`iimages/yuta.jpg` -> You post images/yuta.jpg
+`iimages/yuta.jpg` -> You post `"images/yuta.jpg"`
 
 `jimages/takuto-meshi.png` -> Other person post `"images/takuto-meshi.png"`
 

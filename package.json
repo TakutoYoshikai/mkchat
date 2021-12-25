@@ -1,0 +1,24 @@
+{
+  "name": "chat-profile",
+  "version": "1.0.0",
+  "description": "The Chat UI Article Generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakutoYoshikai/chat-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakutoYoshikai/chat-profile/issues"
+  },
+  "homepage": "https://github.com/TakutoYoshikai/chat-profile#readme",
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "template-string": "github:TakutoYoshikai/template-string"
+  }
+}

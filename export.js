@@ -1,43 +1,52 @@
+const template = require("template-string");
+const fs = require("fs");
+
 const myIcon = "images/takuto-meshi.png";
 const yourIcon = "images/yuta.jpg";
+const mkdirp = require("mkdirp");
 
 function myMessage(text) {
-  return `<div class="my-message">
+  return `  <div class="my-message">
     <div class="message-text">${text}</div>
     <img src="${myIcon}" class="message-icon">
-  </div>`
+  </div>
+`
 }
 
 function yourMessage(text) {
-  return `<div class="message">
+  return `  <div class="message">
     <img src="${yourIcon}" class="message-icon">
     <div class="message-text">${text}</div>
-  </div>`
+  </div>
+`
 }
 
 function yourImage(src) {
-  return `<div class="message">
+  return `  <div class="message">
     <img src="${yourIcon}" class="message-icon">
     <div class="message-text">
       <img class="message-image" src="${src}">
     </div>
-  </div>`
+  </div>
+`
 }
 
 function myImage(src) {
-  return `<div class="my-message">
+  return `  <div class="my-message">
     <div class="message-text">
       <img class="message-image" src="${src}">
     </div>
     <img src="${myIcon}" class="message-icon">
-  </div>`
+  </div>
+`
 }
 function title(text) {
-  return `<div class="center">
+  return `  <div class="center">
     <p class="title">
       ${text}
     </p>
-  </div>`
+  </div>
+`
 }
 
 function chat(messages) {
@@ -70,15 +79,21 @@ function chatToHtml(csv) {
   })
 }
 
-function getChatTexts() {
+function getChatTexts(chatTxt) {
   const fs = require("fs")
-  return fs.readFileSync("chat.txt", "utf-8");
+  return fs.readFileSync(chatTxt, "utf-8");
 }
 
-const text = getChatTexts();
-const html = chat(chatToHtml(text))
-let proc = require("child_process").spawn("pbcopy")
-proc.stdin.write(html)
-proc.stdin.end()
-console.log("Copied html!");
-process.exit(0);
+const text = getChatTexts(process.argv[2]);
+const chatDiv = chat(chatToHtml(text));
+let html = fs.readFileSync(__dirname + "/index.html", "utf8");
+html = template(html, {
+  chat: chatDiv,
+});
+
+const outputDir = "./chat";
+const imageDir = outputDir + "/images";
+mkdirp.sync(outputDir);
+mkdirp.sync(imageDir);
+fs.copyFileSync(__dirname + "/index.css", outputDir + "/index.css");
+fs.writeFileSync(outputDir + "/index.html", html);

@@ -2,8 +2,8 @@
 const template = require("template-string");
 const fs = require("fs");
 
-const myIcon = "images/takuto-meshi.png";
-const yourIcon = "images/yuta.jpg";
+let myIcon;;
+let yourIcon;
 const mkdirp = require("mkdirp");
 
 function myMessage(text) {
@@ -62,6 +62,12 @@ function chat(messages) {
       return a + myImage(b.text);
     } else if (b.type === "j") {
       return a + yourImage(b.text);
+    } else if (b.type === "x") {
+      myIcon = b.text;
+      return a;
+    } else if (b.type === "y") {
+      yourIcon = b.text;
+      return a;
     }
   }, "")
 }

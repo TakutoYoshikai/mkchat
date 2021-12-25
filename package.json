@@ -1,5 +1,5 @@
 {
-  "name": "chat-profile",
+  "name": "mkchat",
   "version": "1.0.0",
   "description": "The Chat UI Article Generator.",
   "main": "index.js",

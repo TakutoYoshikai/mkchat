@@ -1,4 +1,4 @@
-# chat-profile
+# mkchat
 The Chat UI Article Generator.
 
 It can generate articles such as below.
@@ -8,7 +8,7 @@ https://yoshikai.net/interview.html
 
 
 ### Usage
-#### Auto generate html from chat.txt
+#### chat.txt format
 `tSelf Introduction` -> title is "Self Introduction"
 
 `mHello` -> You say Hello.
@@ -19,8 +19,14 @@ https://yoshikai.net/interview.html
 
 `jimages/takuto-meshi.png` -> Other person post images/takuto-meshi.png
 
-**Example**
+`nimages/takuto-meshi.png` -> Your icon image
+
+`limages/yuta.jpg` -> Other person's icon image
+
+#### Example
 ```
+nimages/takuto-meshi.png
+limages/yuta.jpg
 tSelf Introduction
 mHello!
 yHey!
@@ -28,24 +34,21 @@ iimages/yuta.jpg
 jimages/takuto-meshi.png
 ```
 
-**Result of the Example**
+#### Result of the Example
 
 <img src="./result.png" width="300">
 
-#### Export HTML tags
-1. Change myIcon and yourIcon in export.js
 
-2. Rewrite chat.txt
+#### Install
+```bash
+npm install -g TakutoYoshikai/mkchat
+```
 
-3. `node export.js`
+#### Command
+```bash
+mkchat <CHAT.TXT FILE>
 
-4. Paste html tags to index.html
-
-5. Comment out this line in index.js
-```javascript
-getChatTexts().then(function(text) {
-  //document.getElementById("chat").innerHTML = chat(csvToChat(text))
-})
+# It exports ./chat 
 ```
 
 ### LICENSE

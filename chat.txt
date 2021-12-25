@@ -1,5 +1,5 @@
-ximages/takuto-meshi.png
-yimages/yuta.jpg
+nimages/takuto-meshi.png
+limages/yuta.jpg
 tSelf Introduction
 mHello!
 yHey!

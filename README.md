@@ -40,7 +40,7 @@ jimages/takuto-meshi.png
 
 #### Result of the Example
 
-<img src="./result.png" width="300">
+<img src="./result.png" width="500">
 
 
 #### Install

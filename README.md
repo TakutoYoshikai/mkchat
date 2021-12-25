@@ -21,11 +21,11 @@ https://yoshikai.net/interview.html
 
 `iimages/yuta.jpg` -> You post images/yuta.jpg
 
-`jimages/takuto-meshi.png` -> Other person post images/takuto-meshi.png
+`jimages/takuto-meshi.png` -> Other person post `"images/takuto-meshi.png"`
 
-`nimages/takuto-meshi.png` -> Your icon image
+`nimages/takuto-meshi.png` -> Your icon image `"images/takuto-meshi.png"`
 
-`limages/yuta.jpg` -> Other person's icon image
+`limages/yuta.jpg` -> Other person's icon image `"images/yuta.jpg"`
 
 #### chat.txt example
 ```

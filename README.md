@@ -6,6 +6,10 @@ https://yoshikai.net/interview.html
 
 ![Takuto Yoshikai's Profile](https://github.com/TakutoYoshikai/chat-profile/blob/master/cover.png)
 
+### Requirements
+* macOS or Ubuntu
+* npm 
+* Node.js
 
 ### Usage
 #### chat.txt format

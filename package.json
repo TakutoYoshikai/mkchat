@@ -20,5 +20,8 @@
   "dependencies": {
     "mkdirp": "^1.0.4",
     "template-string": "github:TakutoYoshikai/template-string"
+  },
+  "bin": {
+    "mkchat": "./export.js"
   }
 }

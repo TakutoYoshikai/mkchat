@@ -23,7 +23,7 @@ https://yoshikai.net/interview.html
 
 `limages/yuta.jpg` -> Other person's icon image
 
-#### Example
+#### chat.txt example
 ```
 nimages/takuto-meshi.png
 limages/yuta.jpg

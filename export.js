@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const template = require("template-string");
 const fs = require("fs");
 
